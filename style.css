@@ -12,9 +12,11 @@ body {
   align-items: center;
   height: 100vh;
   background-color: hsl(216deg, 12%, 8%);
+  position: relative;
 }
 
 .container {
+  position: absolute;
   background-color: rgb(31, 38, 48);
   max-width: 24rem;
   padding: 2rem;
@@ -55,6 +57,12 @@ body {
 .container .buttons .rating-btn:hover {
   background-color: hsl(25deg, 97%, 53%);
 }
+.container .buttons .ratinButtonPressed {
+  background: hsl(216deg, 12%, 54%);
+}
+.container .buttons .ratinButtonDePressed {
+  background: #262f38;
+}
 .container .submit-btn {
   margin-top: 2rem;
   padding: 0.75rem 8.5rem;
@@ -64,6 +72,10 @@ body {
   color: hsl(0deg, 0%, 100%);
   font-size: 16px;
   font-weight: 700;
+}
+.container .submitButtonPressed {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
 }
 .container h4 {
   color: hsl(25deg, 97%, 53%);
@@ -75,6 +87,7 @@ body {
 }
 
 .thankDiv {
+  display: none;
   text-align: center;
 }
 .thankDiv img {
@@ -82,13 +95,4 @@ body {
 }
 .thankDiv h2 {
   padding: 0;
-}
-
-.ratinButtonPressed {
-  background-color: hsl(216deg, 12%, 54%);
-}
-
-.submitButtonPressed {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
 }/*# sourceMappingURL=style.css.map */
