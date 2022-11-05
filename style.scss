@@ -30,10 +30,14 @@ body
     height: 100vh;
 
     background-color: $Very-Dark-Blue;
+
+    position: relative;
 }
 
 .container
 {
+    position: absolute;
+
     background-color: $Dark-Blue;
     max-width: 24rem;
     padding: 2rem;
@@ -80,6 +84,15 @@ body
                 background-color: $primary;
             }
         }
+        .ratinButtonPressed
+        {
+            background: $Medium-Grey;
+        }
+        .ratinButtonDePressed
+        {
+            background: $dark-gray;
+        }
+
     }
     .submit-btn
     {
@@ -92,6 +105,11 @@ body
         color: $White;
         font-size: 16px;
         font-weight: $bold;
+    }
+    .submitButtonPressed
+    {
+        background-color: $White;
+        color: $primary;
     }
     h4
     {
@@ -106,6 +124,7 @@ body
 }
 .thankDiv
 {
+    display: none;
     img
     {
         padding: .5rem;
@@ -117,12 +136,3 @@ body
     }
 }
 
-.ratinButtonPressed
-{
-    background-color: $Medium-Grey;
-}
-.submitButtonPressed
-{
-    background-color: $White;
-    color: $primary;
-}
