@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+// Colors
+
+$primary : hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$dark-gray : #262f38;
+$Dark-Blue: rgba(31,38,48,255);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+// font
+$psize : 15px;
+$medium : 400;
+$bold : 700;
+
+*
+{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: $Very-Dark-Blue;
+}
+
+.container
+{
+    background-color: $Dark-Blue;
+    max-width: 24rem;
+    padding: 2rem;
+    border-radius: 25px;
+    margin: 0 1rem;
+    .starIcon
+    {
+        background-color: $dark-gray;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    h2
+    {
+        color: $White;
+        padding: 1rem 0;
+    }
+    p
+    {
+        color: $White;
+        font-size: $psize;
+        opacity: .7;
+        padding: 1rem 0;
+        width: 95%;
+        line-height: 1.5;
+    }
+    .buttons
+    {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .rating-btn
+        {
+            padding: 15px 22px;
+            border-radius: 50%;
+            border:none;
+            background-color: $dark-gray;
+
+            color: white;
+            font-weight: $bold;
+            font-size: 16px;
+
+            &:hover
+            {
+                background-color: $primary;
+            }
+        }
+    }
+    .submit-btn
+    {
+        margin-top: 2rem;
+        padding: .75rem 8.5rem;
+        background-color: $primary;
+        border: none;
+        border-radius: 30px;
+
+        color: $White;
+        font-size: 16px;
+        font-weight: $bold;
+    }
+    h4
+    {
+        color: $primary;
+        background-color: $dark-gray;   
+        width: 75%;
+        padding: 6px;
+        border-radius: 30px;
+        margin:1.5rem auto;
+
+    }
+}
+.thankDiv
+{
+    img
+    {
+        padding: .5rem;
+    }
+    text-align: center;
+    h2
+    {
+        padding: 0;
+    }
+}
+
+.ratinButtonPressed
+{
+    background-color: $Medium-Grey;
+}
+.submitButtonPressed
+{
+    background-color: $White;
+    color: $primary;
+}
