@@ -12,14 +12,15 @@ ratingBtn.click(function(e){
     if($(this).hasClass("ratinButtonPressed"))
     {
         $(ratingBtn).removeClass("ratingButtonPressed");
-        $(this).addClass("ratinButtonDePressed");
+        $(this).addClass("ratinButtonDePressed");   
     }
     else
     {
         $(this).removeClass("ratingDeButtonPressed");
         $(this).addClass("ratinButtonPressed");
+        rating = e.target.id;
     }
-    rating = e.target.id;
+    
     
 })
 
