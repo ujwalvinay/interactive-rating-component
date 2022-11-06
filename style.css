@@ -95,4 +95,29 @@ body {
 }
 .thankDiv h2 {
   padding: 0;
+}
+
+@media screen and (max-width: 540px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 80%;
+  }
+  .container .buttons {
+    gap: 0.75rem;
+  }
+  .container .buttons .rating-btn {
+    padding: 12px 18px;
+  }
+  .container .submit-btn {
+    padding: 0.75rem 6.5rem;
+  }
+  .thankDiv {
+    padding: 1rem 0.5rem;
+  }
+  .thankDiv p {
+    width: 100%;
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
