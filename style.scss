@@ -136,3 +136,40 @@ body
     }
 }
 
+@media screen and (max-width:540px) {
+    html,body
+    {
+        overflow-x: hidden;
+    }
+    .container
+    {
+        max-width: 80%;
+        p
+        {
+            // width: 95%;
+            // padding: 0;
+        }
+        .buttons
+        {
+            gap: .75rem;
+            .rating-btn
+            {
+                padding: 12px 18px;
+            }
+        }
+        .submit-btn
+        {
+            padding: .75rem 6.5rem;
+        }
+    }
+    .thankDiv
+    {
+        padding: 1rem .5rem;
+        p
+        {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    
+}
